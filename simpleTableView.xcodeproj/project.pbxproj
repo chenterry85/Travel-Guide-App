@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3665A41123FB986F009A863B /* RateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3665A41023FB986F009A863B /* RateViewController.swift */; };
+		366B6C8023EBB66700209E66 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366B6C7F23EBB66700209E66 /* CustomCell.swift */; };
 		36AB2C7923E5269A001C9206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB2C7823E5269A001C9206 /* AppDelegate.swift */; };
 		36AB2C7B23E5269A001C9206 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB2C7A23E5269A001C9206 /* SceneDelegate.swift */; };
 		36AB2C7D23E5269A001C9206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AB2C7C23E5269A001C9206 /* ViewController.swift */; };
 		36AB2C8023E5269A001C9206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AB2C7E23E5269A001C9206 /* Main.storyboard */; };
 		36AB2C8223E5269B001C9206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36AB2C8123E5269B001C9206 /* Assets.xcassets */; };
 		36AB2C8523E5269B001C9206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36AB2C8323E5269B001C9206 /* LaunchScreen.storyboard */; };
+		36AB2C8D23E52A6C001C9206 /* citylist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36AB2C8C23E52A6C001C9206 /* citylist.plist */; };
+		36BCA1D823EE9C3200FBFE56 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BCA1D723EE9C3200FBFE56 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36AB2C7523E5269A001C9206 /* simpleTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3665A41023FB986F009A863B /* RateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateViewController.swift; sourceTree = "<group>"; };
+		366B6C7F23EBB66700209E66 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		36AB2C7523E5269A001C9206 /* Travel Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36AB2C7823E5269A001C9206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36AB2C7A23E5269A001C9206 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		36AB2C7C23E5269A001C9206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		36AB2C8123E5269B001C9206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36AB2C8423E5269B001C9206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36AB2C8623E5269B001C9206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36AB2C8C23E52A6C001C9206 /* citylist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citylist.plist; sourceTree = "<group>"; };
+		36BCA1D723EE9C3200FBFE56 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		36AB2C7623E5269A001C9206 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				36AB2C7523E5269A001C9206 /* simpleTableView.app */,
+				36AB2C7523E5269A001C9206 /* Travel Guide.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,9 +67,13 @@
 				36AB2C7823E5269A001C9206 /* AppDelegate.swift */,
 				36AB2C7A23E5269A001C9206 /* SceneDelegate.swift */,
 				36AB2C7C23E5269A001C9206 /* ViewController.swift */,
+				366B6C7F23EBB66700209E66 /* CustomCell.swift */,
+				36BCA1D723EE9C3200FBFE56 /* DetailViewController.swift */,
+				3665A41023FB986F009A863B /* RateViewController.swift */,
 				36AB2C7E23E5269A001C9206 /* Main.storyboard */,
 				36AB2C8123E5269B001C9206 /* Assets.xcassets */,
 				36AB2C8323E5269B001C9206 /* LaunchScreen.storyboard */,
+				36AB2C8C23E52A6C001C9206 /* citylist.plist */,
 				36AB2C8623E5269B001C9206 /* Info.plist */,
 			);
 			path = simpleTableView;
@@ -84,7 +96,7 @@
 			);
 			name = simpleTableView;
 			productName = simpleTableView;
-			productReference = 36AB2C7523E5269A001C9206 /* simpleTableView.app */;
+			productReference = 36AB2C7523E5269A001C9206 /* Travel Guide.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36AB2C8523E5269B001C9206 /* LaunchScreen.storyboard in Resources */,
+				36AB2C8D23E52A6C001C9206 /* citylist.plist in Resources */,
 				36AB2C8223E5269B001C9206 /* Assets.xcassets in Resources */,
 				36AB2C8023E5269A001C9206 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3665A41123FB986F009A863B /* RateViewController.swift in Sources */,
 				36AB2C7D23E5269A001C9206 /* ViewController.swift in Sources */,
 				36AB2C7923E5269A001C9206 /* AppDelegate.swift in Sources */,
+				36BCA1D823EE9C3200FBFE56 /* DetailViewController.swift in Sources */,
+				366B6C8023EBB66700209E66 /* CustomCell.swift in Sources */,
 				36AB2C7B23E5269A001C9206 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,8 +306,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.terrychen.simpleTableView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrychen.travelguide;
+				PRODUCT_NAME = "Travel Guide";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -307,8 +323,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.terrychen.simpleTableView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrychen.travelguide;
+				PRODUCT_NAME = "Travel Guide";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
