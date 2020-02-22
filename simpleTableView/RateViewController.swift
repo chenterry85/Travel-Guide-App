@@ -10,12 +10,31 @@ import UIKit
 
 class RateViewController: UIViewController {
 
+    @IBOutlet var backgroundImageView:UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.frame
+        backgroundImageView.addSubview(blurEffectView)
+        
+        let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeRight(_:)))
+        gestureRecognizer.direction = .down
+        gestureRecognizer.numberOfTouchesRequired = 1
+        view.addGestureRecognizer(gestureRecognizer)
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    @objc func swipeRight(_ sender:UISwipeGestureRecognizer){
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
