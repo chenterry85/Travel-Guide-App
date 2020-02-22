@@ -11,6 +11,7 @@ import UIKit
 class RateViewController: UIViewController {
 
     @IBOutlet var backgroundImageView:UIImageView!
+    @IBOutlet var containerView:UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +26,21 @@ class RateViewController: UIViewController {
         gestureRecognizer.numberOfTouchesRequired = 1
         view.addGestureRecognizer(gestureRecognizer)
         
+        containerView.transform = CGAffineTransform(scaleX: 0, y: 0)
+        containerView.layer.cornerRadius = 10
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 0.5) {
+            self.containerView.transform = CGAffineTransform.identity //transform back to identity (original form)
+        }
     }
     
     @objc func swipeRight(_ sender:UISwipeGestureRecognizer){

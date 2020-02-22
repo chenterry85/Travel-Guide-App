@@ -49,3 +49,12 @@ class DetailViewController: UITableViewController {
     }
     
 }
+
+//UITableViewDelegate
+extension DetailViewControllerDelegate{
+    
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
+//
+//    }
+    
+}

@@ -103,6 +103,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="SM2-jE-H2G">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -201,7 +203,7 @@
                             </barButtonItem>
                             <barButtonItem image="star" catalog="system" id="E3L-H0-My3">
                                 <connections>
-                                    <segue destination="uHF-nX-FG1" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="CDT-vE-bJT"/>
+                                    <segue destination="uHF-nX-FG1" kind="presentation" modalPresentationStyle="formSheet" modalTransitionStyle="coverVertical" id="CDT-vE-bJT"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -222,36 +224,60 @@
             <objects>
                 <viewController id="lxv-08-r4P" customClass="RateViewController" customModule="Travel_Guide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dX2-7u-CoQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miami" translatesAutoresizingMaskIntoConstraints="NO" id="p70-Zu-iyx">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siE-JR-zsN">
-                                <rect key="frame" x="40" y="91" width="334" height="538.66666666666663"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siE-JR-zsN">
+                                <rect key="frame" x="40" y="88.666666666666686" width="334" height="538.66666666666652"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WSe-RE-2EC">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barcelona" translatesAutoresizingMaskIntoConstraints="NO" id="WSe-RE-2EC">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="255"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="WSe-RE-2EC" secondAttribute="height" multiplier="334:255" id="LaE-Ek-lde"/>
                                         </constraints>
                                     </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="lTK-jl-jrD">
+                                        <rect key="frame" x="30" y="285" width="274" height="183"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qwy-oP-pI8">
+                                                <rect key="frame" x="0.0" y="0.0" width="274" height="30"/>
+                                                <state key="normal" title="Excellent"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldV-oR-yts">
+                                                <rect key="frame" x="0.0" y="51" width="274" height="30"/>
+                                                <state key="normal" title="Nice"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Do-LP-SEA">
+                                                <rect key="frame" x="0.0" y="102" width="274" height="30"/>
+                                                <state key="normal" title="Average"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwc-Ga-NeK">
+                                                <rect key="frame" x="0.0" y="152.99999999999994" width="274" height="30"/>
+                                                <state key="normal" title="Terrible"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="WSe-RE-2EC" secondAttribute="trailing" id="3GW-jk-CyO"/>
                                     <constraint firstItem="WSe-RE-2EC" firstAttribute="leading" secondItem="siE-JR-zsN" secondAttribute="leading" id="6v2-gX-9Wv"/>
+                                    <constraint firstAttribute="trailing" secondItem="lTK-jl-jrD" secondAttribute="trailing" constant="30" id="7Wo-r4-hOg"/>
                                     <constraint firstAttribute="width" secondItem="siE-JR-zsN" secondAttribute="height" multiplier="80:129" id="TXe-vc-Vxe"/>
+                                    <constraint firstItem="lTK-jl-jrD" firstAttribute="top" secondItem="WSe-RE-2EC" secondAttribute="bottom" constant="30" id="nyD-Je-UXF"/>
                                     <constraint firstItem="WSe-RE-2EC" firstAttribute="top" secondItem="siE-JR-zsN" secondAttribute="top" id="qob-ub-eqH"/>
+                                    <constraint firstItem="lTK-jl-jrD" firstAttribute="leading" secondItem="siE-JR-zsN" secondAttribute="leading" constant="30" id="yF4-JA-sZd"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="siE-JR-zsN" firstAttribute="top" secondItem="1uO-bg-I12" secondAttribute="top" constant="47" id="3IZ-wi-FMz"/>
+                            <constraint firstItem="siE-JR-zsN" firstAttribute="centerY" secondItem="dX2-7u-CoQ" secondAttribute="centerY" id="2Ie-D3-x1L"/>
                             <constraint firstItem="1uO-bg-I12" firstAttribute="trailing" secondItem="siE-JR-zsN" secondAttribute="trailing" constant="40" id="5VT-hy-fkX"/>
                             <constraint firstAttribute="bottom" secondItem="p70-Zu-iyx" secondAttribute="bottom" id="7Qz-0F-PWM"/>
                             <constraint firstItem="p70-Zu-iyx" firstAttribute="top" secondItem="dX2-7u-CoQ" secondAttribute="top" id="H3I-6N-ZL1"/>
@@ -270,6 +296,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="backgroundImageView" destination="p70-Zu-iyx" id="OjJ-p0-J6z"/>
+                        <outlet property="containerView" destination="siE-JR-zsN" id="0E9-8x-SFb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78O-5F-cfu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -301,7 +328,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uHF-nX-FG1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iIC-wP-iNZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -315,6 +342,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Barcelona" width="640" height="360"/>
         <image name="Miami" width="640" height="360"/>
         <image name="star" catalog="system" width="64" height="58"/>
     </resources>
