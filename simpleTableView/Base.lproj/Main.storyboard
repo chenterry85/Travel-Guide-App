@@ -99,21 +99,21 @@
         <scene sceneID="YEt-XL-8FR">
             <objects>
                 <tableViewController id="QMa-xo-FPm" customClass="DetailViewController" customModule="Travel_Guide" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SaN-94-Ook">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SaN-94-Ook">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="SM2-jE-H2G">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="291"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <sections>
                             <tableViewSection headerTitle="Country" id="g5e-dK-svg">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="xVF-hs-uAw">
-                                        <rect key="frame" x="0.0" y="315" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="319" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xVF-hs-uAw" id="foM-ls-fBO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -138,7 +138,7 @@
                             <tableViewSection headerTitle="Continent" id="PUf-Th-IHc">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="60" id="yQa-Id-wg6">
-                                        <rect key="frame" x="0.0" y="431" width="414" height="60"/>
+                                        <rect key="frame" x="0.0" y="435" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yQa-Id-wg6" id="JpX-0I-QNW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -163,7 +163,7 @@
                             <tableViewSection headerTitle="Description" id="WRv-gT-Unr">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="301" id="2dL-fD-gYc">
-                                        <rect key="frame" x="0.0" y="547" width="414" height="301"/>
+                                        <rect key="frame" x="0.0" y="551" width="414" height="301"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2dL-fD-gYc" id="WWr-7K-X9t">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="301"/>
@@ -213,11 +213,12 @@
                         <outlet property="continenField" destination="dSB-fH-h6w" id="0WT-eD-ac6"/>
                         <outlet property="countryField" destination="pci-rG-gW4" id="OtI-RB-UeJ"/>
                         <outlet property="descriptionLabel" destination="kVv-KD-3rc" id="dzh-9T-kwC"/>
+                        <outlet property="rateButton" destination="E3L-H0-My3" id="c1d-Hv-Kdu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXl-iT-N6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1738" y="130"/>
+            <point key="canvasLocation" x="1737.68115942029" y="129.61956521739131"/>
         </scene>
         <!--Rate View Controller-->
         <scene sceneID="I9X-hx-qpn">

@@ -46,8 +46,10 @@ class ViewController: UIViewController{
         notificationCenter.addObserver(self, selector: #selector(updatePlist(_:)), name: UIApplication.willResignActiveNotification, object: nil)
         //terminate app -> update
         notificationCenter.addObserver(self, selector: #selector(updatePlist(_:)), name: UIApplication.willTerminateNotification, object: nil)
+        
+        initNavigationBarSettings()
+
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -70,6 +72,11 @@ class ViewController: UIViewController{
             
             cityUpdatedStatus = false
         }
+    }
+    
+    func initNavigationBarSettings(){
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
     }
 
 }

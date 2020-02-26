@@ -15,7 +15,8 @@ class RateViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //blur background image
         let blurEffect = UIBlurEffect(style: .dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = view.frame
@@ -31,11 +32,13 @@ class RateViewController: UIViewController {
         
     }
     
+    //Make the White Navigation Bar Dissappear
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
     
+    //Part of Animation
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         UIView.animate(withDuration: 0.5) {
@@ -44,6 +47,7 @@ class RateViewController: UIViewController {
     }
     
     @objc func swipeRight(_ sender:UISwipeGestureRecognizer){
+        //navigate back to last scene
         dismiss(animated: true, completion: nil)
     }
 
